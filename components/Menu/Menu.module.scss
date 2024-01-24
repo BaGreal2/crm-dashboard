@@ -1,0 +1,63 @@
+.menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 306px;
+  padding-top: 36px;
+  padding-bottom: 76px;
+  padding-left: 28px;
+  background-color: white;
+}
+
+.menu--space {
+  width: 306px;
+  height: 100vh;
+}
+
+.menu--container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  @keyframes slideRight {
+    from {
+      left: 100vw; /* Initial position, adjust as needed */
+    }
+    to {
+      left: 0; /* Final position, adjust as needed */
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      left: 0; /* Initial position, adjust as needed */
+    }
+    to {
+      left: 100vw; /* Final position, adjust as needed */
+    }
+  }
+
+  .menu {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 100vw;
+    z-index: 5;
+    animation: slideLeft 0.3s ease-in-out;
+    padding-bottom: 20px;
+  }
+
+  .menu-active {
+    left: 0;
+    animation: slideRight 0.3s ease-in-out;
+  }
+
+  .menu--space {
+    display: none;
+  }
+}

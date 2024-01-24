@@ -1,0 +1,70 @@
+.menu--button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  gap: 14px;
+  width: 250px;
+  height: 46px;
+  padding-left: 11px;
+  padding-right: 15px;
+
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(89, 50, 234, 0.1);
+  }
+}
+
+.menu--button-active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  width: 250px;
+  height: 46px;
+  padding-left: 11px;
+  padding-right: 15px;
+  background-color: #5932ea;
+}
+
+.menu--button-section {
+  display: flex;
+  gap: 14px;
+}
+
+.menu--link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu--button-text-active {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+}
+
+.menu--button-text {
+  display: flex;
+  align-items: center;
+  color: #9197b3;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+}
+
+.menu--button-icon-active {
+  filter: grayscale(100%) brightness(150%);
+}
+
+@media only screen and (max-width: 600px) {
+  .menu--button {
+    width: 90%;
+  }
+  .menu--button-active {
+    width: 90%;
+  }
+}

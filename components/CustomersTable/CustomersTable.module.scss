@@ -1,0 +1,59 @@
+.table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.table--titles {
+  color: #b5b7c0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+}
+
+.table--titles > th {
+  width: 18.8%;
+  text-align: left;
+  height: 45px;
+}
+
+.table--status-column {
+  width: 6%;
+}
+
+.spacer {
+  background-color: #eee;
+  height: 1px;
+}
+
+.spacer-wide {
+  position: absolute;
+  left: 0;
+  top: 177px;
+  background-color: #eee;
+  height: 1px;
+  width: 100%;
+}
+
+.table--field {
+  color: #292d32;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  height: 62px;
+}
+
+@media only screen and (max-width: 600px) {
+  .table {
+    width: 800px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .spacer-wide {
+    // width: 800px;
+    top: 165px;
+  }
+  .table--container {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.logoIcon {
+  margin-right: 4px;
+}
+
+.logoText {
+  color: black;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.26px;
+}
+
+.logoVersion {
+  color: #838383;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  padding-top: 10px;
+}

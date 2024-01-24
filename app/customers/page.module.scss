@@ -1,0 +1,13 @@
+.customers--container {
+  padding-top: 41px;
+  padding-left: 71px;
+  background-color: #fafbff;
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .customers--container {
+    width: 100vw;
+    padding-left: 0;
+  }
+}

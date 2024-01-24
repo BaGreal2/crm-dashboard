@@ -1,0 +1,30 @@
+.account--container {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  gap: 12px;
+}
+
+.account--image {
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.account--info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.account--info-name {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+}
+
+.account--info-position {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
